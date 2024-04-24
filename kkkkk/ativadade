@@ -1,0 +1,15 @@
+import os
+os.system("cls || clear")
+print("=====Solicitando Dados=====")
+nome = input("Digite seu nome:")
+primeiraNota = int(input("Digite a Primeira Nota:"))
+segundaNota = int(input("Digite a Segunda Nota:"))
+
+os.system("cls || clear")
+media = (primeiraNota + segundaNota) / 2
+print("=====Exibindo Resultados=====")
+print(f"Nome: {nome}")
+print(f"Primeira Nota: {primeiraNota}")
+print(f"Segunda Nota: {segundaNota}")
+print(f"Média: {media}")
+
