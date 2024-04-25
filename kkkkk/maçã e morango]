@@ -1,0 +1,32 @@
+import os
+os.system("cls || clear")
+
+print("====Feirinha===")
+
+print("Até 5 Kg    Acima de 5 kg")
+
+print("Morango 2,50 por Kg  2,20 por kg")
+
+print("Maçã 1,80 por kg 1,50 por kg")
+
+print("Digite quantos kilos deseja:")
+
+maca = int(input("Maçã:"))
+morango = int(input("Morango:"))
+
+if(maca <= 5):
+    totalMaca = maca * 1.8
+if(morango <= 5):
+    totalMorango = morango * 2.5
+if(maca > 5):
+    totalMaca = maca * 1.5
+if(morango > 5):
+    totalMorango = morango * 2.2
+
+soma = morango + maca 
+
+valorAPagar = totalMaca + totalMorango   
+
+if(soma > 8 || valorAPagar > 25):
+
+    totaldesconto = valorAPagar - (valorAPagar * 0.1)            

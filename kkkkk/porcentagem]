@@ -1,0 +1,25 @@
+import os
+os.system("cls || clear")
+
+nomeProduto = input("Digite o nome do produto:")
+
+quantidadeAdiquirida = int(input("Digite a quantidade do seu produto:"))
+
+precoUnitario = int(input("Digite o preço unitário do seu produto:"))
+
+total = quantidadeAdiquirida * precoUnitario
+
+if quantidadeAdiquirida <=5:
+    totalDesconto = total - (total * 0.02) 
+elif quantidadeAdiquirida <= 10:
+    totalDesconto = total - (total * 0.03)
+else:
+    totalDesconto = total - (total * 0.05)
+
+os.system("cls || clear")
+print(f"Produto: {nomeProduto}")
+print(f"Quantidade: {quantidadeAdiquirida}")
+print(f"Preço Unitário: {precoUnitario}")
+print(f"Total sem desconto = {total}")
+print(f"Total com desconto = {totalDesconto}")
+ 

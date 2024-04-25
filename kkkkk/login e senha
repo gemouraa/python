@@ -1,0 +1,11 @@
+import os
+os.system("cls || clear")
+mailCorreto = "gg@mail.com"
+
+mail = input("Digite o e-mail:")
+senha = input("Digite sua senha:")
+
+if (mail == mailCorreto and senha == "244"):
+    print("Seja Bem vindo!")
+else:
+    print("E-mail e senha incorreto!")    
