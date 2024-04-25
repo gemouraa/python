@@ -1,0 +1,40 @@
+import os
+os.system("cls || clear")
+
+print("=====SENAI=====")
+
+
+
+nome = input("Digite seu nome:")
+
+idade = int(input("Digite sua idade:"))
+
+primeiraNota = float(input("Digite sua Primeira Nota:"))
+
+segundaNota = float(input("Digite sua Segunda Nota:"))
+
+terceiraNota = float(input("Digite sua Terceira Nota:"))
+
+os.system("cls || clear")
+
+media  = (primeiraNota + segundaNota + terceiraNota) / 3
+
+print("=====Exibindo Resultados=====")
+print(f"Nome: {nome}")
+print(f"Idade: {idade}")
+print(f"Primeira Nota: {primeiraNota}")
+print(f"Segunda Nota: {segundaNota}")
+print(f"Terceira Nota: {terceiraNota}")
+print(f"Média: {media}")
+
+if (media > 7):
+    print("Aprovado")
+if (media < 7 and media > 5):
+    print("Recuperação")
+if (media < 5):
+    print("Reprovado")        
+
+
+
+
+

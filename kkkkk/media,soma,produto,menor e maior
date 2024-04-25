@@ -1,0 +1,36 @@
+import os
+os.system("cls || clear")
+
+print("=====SENAI=====")
+
+primeiroNumero = float(input("Digite um Número:"))
+
+segundoNumero = float(input("Digite um segundo Número:"))
+
+media = (primeiroNumero + segundoNumero) / 2
+
+soma = primeiroNumero + segundoNumero
+
+produto = primeiroNumero * segundoNumero
+maiorNumero = max(primeiroNumero, segundoNumero)
+menorNumero = min(primeiroNumero, segundoNumero)
+""""
+if (primeiroNumero > segundoNumero):
+    maiorNumero = primeiroNumero
+    menorNumero = segundoNumero  
+if (primeiroNumero < segundoNumero):
+    maiorNumero = segundoNumero
+    menorNumero = primeiroNumero      
+"""
+os.system("cls || clear")
+
+print("=====Exibindo Resultados=====")
+print(f"Primeiro número: {primeiroNumero}")
+print(f"Segundo número: {segundoNumero}")
+print(f"Média: {media}")
+print(f"Soma: {soma}")
+print(f"Produto: {produto}")
+print(f"Maior Número: {maiorNumero}")
+print(f"Menor Número: {menorNumero}")
+
+

@@ -1,0 +1,20 @@
+import os
+os.system("cls || clear")
+
+idade = int(input("Digite sua idade: "))
+
+peso = int(input("Digite seu peso: "))
+
+if idade < 18:
+    print("Menor de idade:")
+else: 
+    print("Maior Idade")
+if peso < 40:
+    print("Magro.")
+elif peso < 80:
+    print("Normal.")
+else:
+    print("Sobrepeso.")
+
+print("=====FIM=====")
+
