@@ -1,0 +1,18 @@
+import os
+import time
+
+os.system("clear")
+contador = 0
+soma = 0
+numero = 0
+while  (numero >= 0):
+    if (numero >= 0):
+        numero = float(input("Insira um número:"))
+        soma += numero
+        contador += 1
+
+media = soma / contador
+
+os.system("clear")
+print(f"Média:{media}")
+print(f"Quantidade de vezes repetidas: {contador}")

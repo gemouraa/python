@@ -1,0 +1,14 @@
+import os
+os.system("cls || clear")
+contador = 0
+soma = 0
+
+for i in range (4):
+    numeros = float(input(f"Digite o {i+1}º número:"))
+    contador += 1 
+    soma += numeros
+
+media = soma / contador
+
+os.system("cls || clear")
+print(f"Média: {media}")

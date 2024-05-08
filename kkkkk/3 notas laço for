@@ -1,0 +1,20 @@
+import os
+os.system("cls || clear")
+contador = 0
+soma = 0
+
+for i in range (3):
+    numeros = float(input(f"Digite a {i+1}º nota:"))
+    contador += 1 
+    soma += numeros
+
+media = soma / contador
+
+os.system("cls || clear")
+print(f"Média: {media: .2f}")
+if(media < 4):
+    print("Reprovado")
+elif(media < 7):
+    print("Recuperação")
+else:
+    print("Aprovado")        

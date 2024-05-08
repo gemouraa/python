@@ -1,0 +1,42 @@
+import os
+
+os.system("clear")
+TAM = 3
+opcao = "S"
+soma = 0
+contador = 0
+
+while (opcao == "S"):
+        print("S -- Inserir mais uma nota;")
+        print("P -- Ver quantas notas foram inseridas;")
+        print("N -- Calcular a média das notas informadas;")
+        opcao = str(input("Digite a opção desejada:"))
+        opcao = opcao.upper()
+
+        if (opcao == "S"):
+            os.system("cls || clear")
+            nota = float(input("Digite uma nota:"))
+            soma += nota
+            contador += 1
+        if(opcao == "P"):
+            os.system("cls || clear") 
+            print(f"Quantidade de repetições: {contador}")
+            opcao = "S"
+
+        if(opcao == "N"):
+            os.system("cls || clear")
+            media = soma / contador
+            print(f"Media: {media}")
+            print(f"Quantidade de vezes repetidas: {contador}")
+            break
+
+        if(opcao != "S" and opcao != "N" and opcao != "P"):
+            os.system("cls || clear")
+            print("Opção invalida")
+            opcao = "S"
+        
+
+
+  
+
+

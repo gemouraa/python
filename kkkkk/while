@@ -1,0 +1,18 @@
+import os
+os.system("cls || clear")
+
+
+nota1 = -1
+nota2 = -1
+
+while (nota1 < 0 or nota1 > 10):
+    nota1 = float(input("Digite sua primeira nota:"))
+
+while (nota2 < 0 or nota2 > 10):
+    nota2 = float(input("Digite sua segunda nota:"))
+
+os.system("cls || clear")
+media = (nota1 + nota2) / 2
+print(f"Sua primeira nota: {nota1}")
+print(f"Sua segunda nota: {nota2}")
+print(f"Sua media: {media}")
