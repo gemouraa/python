@@ -1,0 +1,35 @@
+import os
+import time
+
+os.system("clear")
+somaImpar = 0
+somaGeral = 0
+somaPares = 0
+contadorGeral = 0
+contadorPares = 0
+contadorImpar = 0
+while True:      
+    numero = float(input("Insira um número:"))
+    if(numero > 0):
+        contadorGeral += 1  
+        somaGeral += numero
+        
+        if(numero % 2 == 0):
+            somaPares += numero
+            contadorPares += 1
+        else:
+            contadorImpar += 1    
+    if(numero == 0):
+        break
+
+mediaGeral = somaGeral / contadorGeral
+if (contadorPares != 0):
+    mediaPar = somaPares / contadorPares
+
+
+print(f"Quantidade de números pares: {contadorPares}")
+print(f"Quantidade de números impares: {contadorImpar}")
+print(f"Média Par: {mediaPar:.1f}")
+print(f"Média Geral: {mediaGeral: .1f}")
+
+

@@ -5,14 +5,17 @@ os.system("clear")
 contador = 0
 soma = 0
 numero = 0
-while  (numero >= 0):
+while True:
+    numero = float(input("Insira um número:"))
+    
     if (numero >= 0):
-        numero = float(input("Insira um número:"))
         soma += numero
         contador += 1
+    else        :
+        break
 
 media = soma / contador
 
-os.system("clear")
-print(f"Média:{media}")
+
+print(f"Média:{media: .2f}")
 print(f"Quantidade de vezes repetidas: {contador}")
