@@ -1,0 +1,24 @@
+import os
+
+os.system("clear")
+def logosenai():
+    os.system("clear")
+    print("=== ===== ===")
+    print("=== SENAI ===")
+    print("=== ===== ===")
+def inflacao10(n1):  
+    valorFinal = (n1 * 0.1) + n1
+    return valorFinal    
+def inflacao20(n1):  
+    valorFinal = (n1 * 0.2) + n1
+    return valorFinal
+preco = int(input("Digite o preço do produto:"))     
+
+if(preco < 100):
+    resultado = inflacao10(preco)
+else:
+    resultado = inflacao20(preco)
+
+logosenai()
+print(f"Valor Final: {resultado}")
+

@@ -1,0 +1,35 @@
+import os
+
+os.system("clear")
+
+NUM = 2
+
+def logosenai():
+    os.system("clear")
+    print("=== ===== ===")
+    print("=== SENAI ===")
+    print("=== ===== ===")
+
+
+def verificarPar(n1):
+    contadorPar = 0
+    for i in range(6):
+        if(n1[i] % 2 == 0):
+            contadorPar += 1
+    return contadorPar 
+
+def verificarImpar(n1):
+    contadorImpar = 0
+    for i in range(6):
+      if(n1[i] % 2 != 0):
+        contadorImpar += 1
+    return contadorImpar 
+numeros = []
+for i in range(6):
+    numeros.append(float(input(f"Digite o {i + 1}º número:")))
+
+logosenai()
+contadorPar = verificarPar(numeros)
+contadorImpar = verificarImpar(numeros)    
+print(f"Quantidade de números pares:  {contadorPar}")
+print(f"Quantidade de números impares:  {contadorImpar}")

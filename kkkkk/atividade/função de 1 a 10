@@ -10,13 +10,14 @@ def logosenai():
     print("=== SENAI ===")
     print("=== ===== ===")
 
-def tabuadar(n1):
-    for i in range(11):
-       print(f"{n1} x {i} = {n1 * i}")
-    return 
+def tabuadar(numero):
+    for i in range(10):
+       print(f"{numero} x {i+1} = {numero * (i + 1)}")
     
+
+logosenai()   
 numero = int(input("Digite o número desejado:"))   
 
-tabuada = tabuadar(numero)
+tabuadar(numero)
 
 
