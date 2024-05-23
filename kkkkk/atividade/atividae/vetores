@@ -1,0 +1,19 @@
+import os
+import time
+import sys
+
+os.system("clear")
+QUANTIDADENOTAS = 3
+notas = []
+
+for i in range (QUANTIDADENOTAS):
+    nota = float(input(f"Digite a {i+1}º nota:"))
+    notas.append(nota)
+    
+
+media = sum(notas)/ QUANTIDADENOTAS
+
+for i in range (QUANTIDADENOTAS):
+    print(f"Nota: {notas[i]}")
+
+print(f"Média:{media}")    

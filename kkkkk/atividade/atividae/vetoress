@@ -1,0 +1,23 @@
+import os
+import time
+import sys
+
+os.system("clear")
+QUANTIDADENOTAS = 5
+notas = []
+menorNota = sys.maxsize
+maiorNota = 0
+for i in range (QUANTIDADENOTAS):
+    nota = float(input(f"Digite a {i+1}º nota:"))
+    notas.append(nota)
+
+maiorNota = max(notas)    
+menorNota = min(notas)
+
+os.system("clear")
+for i, nota in enumerate(notas):
+    print(f"{i+1}º Nota: {nota}")
+
+
+print(f"Maior Número inserido: {maiorNota}")
+print(f"Menor Número inserido: {menorNota}")

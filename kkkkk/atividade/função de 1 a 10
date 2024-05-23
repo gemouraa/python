@@ -1,0 +1,22 @@
+import os
+
+os.system("clear")
+
+NUM = 2
+
+def logosenai():
+    os.system("clear")
+    print("=== ===== ===")
+    print("=== SENAI ===")
+    print("=== ===== ===")
+
+def tabuadar(n1):
+    for i in range(11):
+       print(f"{n1} x {i} = {n1 * i}")
+    return 
+    
+numero = int(input("Digite o número desejado:"))   
+
+tabuada = tabuadar(numero)
+
+

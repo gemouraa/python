@@ -1,0 +1,24 @@
+import os
+import time
+import sys
+
+os.system("clear")
+QUANTIDADENOTAS = 6
+notas = []
+contadorPar = 0
+contadorImpar = 0
+for i in range (QUANTIDADENOTAS):
+    nota = float(input(f"Digite a {i+1}º nota:"))
+    notas.append(nota)
+    if(notas[i] % 2 == 0):
+        contadorPar += 1
+    else:
+        contadorImpar += 1
+
+os.system("clear")
+for i, nota in enumerate(notas):
+    print(f"{i+1}º Nota: {nota}")
+
+
+print(f"Quantidade de números Pares: {contadorPar}")
+print(f"Quantidade de números Impares: {contadorImpar}")
