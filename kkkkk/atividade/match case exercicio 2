@@ -1,0 +1,56 @@
+import os 
+
+os.system("cls||clear")
+
+ 
+
+def cabecalho():
+ os.system("cls||clear")
+ print(f"===SENAI===")
+
+while True:
+    cabecalho()
+    diaSemana = int(input("Digite o número respectivo ao dia de semana:"))
+
+    match(diaSemana):
+        case 1:
+          cabecalho()
+          print("    Domingo")
+          print("Final de semana!")
+          break
+        case 2:
+          cabecalho()
+          print(" Segunda")
+          print("Dia útil!")
+          break
+        case 3:
+          cabecalho()
+          print(" Terça")
+          print("Dia útil!")
+          break
+        case 4:
+          cabecalho()
+          print(" Quarta")
+          print("Dia útil!")
+          break
+        case 5:
+          cabecalho()
+          print(" Quinta")
+          print("Dia útil!")
+          break
+        case 6:
+          cabecalho()
+          print(" Sexta")
+          print("Dia útil!")
+          break
+        case 7:
+          cabecalho()
+          print(" Sabado")
+          print("Final de semana!")
+          break
+        case _:
+            input("Número invalido, tente novamente!")
+    
+    
+      
+        

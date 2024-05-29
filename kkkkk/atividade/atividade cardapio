@@ -1,0 +1,41 @@
+import os 
+
+os.system("cls||clear")
+
+ 
+
+def cabecalho():
+ os.system("cls||clear")
+ print(f"===RESTAURANTE DO MOURINHA===")
+while True:
+    cabecalho()
+    print("1 - Picanha - 25 conto")
+    print("2 - Lasanha - 20 conto")
+    print("3 - Strogonoff - 18 conto")
+    print("4 - Bife Acebolado - 15 conto")
+    print("5 - Pão com ovo - 5 conto")
+    opcao = int(input("Digite o prato desejado:"))
+
+    match(opcao):
+       case 1:
+          cabecalho() 
+          print("Picanha - 25,00 R$")
+          break
+       case 2:
+          cabecalho() 
+          print("Lasanha - 20,00 R$")
+          break
+       case 3:
+          cabecalho() 
+          print("Strogonoff - 18,00 R$")
+          break
+       case 4:
+          cabecalho() 
+          print("Bife Acebolado - 15,00 R$")
+          break
+       case 5:
+          cabecalho() 
+          print("Pão com ovo - 5,00 R$")
+          break
+       case _:
+          input("Opção invalida, digite o número correto do seu prato.")
